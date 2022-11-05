@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Scrabble</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body class="main">
+    <!-- heading of the game -->
+    <div class="container">
+        <div class="title">SCRABBLE</div>
+        <div class="gameBoard"></div>
+        <!-- Score of player1 block-->
+        <div class="playerOneScoreBox textBox">
+            <h3 class="playerOneDisplayName">Player 1 Score</h3>
+            <div class="playerOneScore"></div>
+        </div>
+        <!-- Score of player2 block -->
+        <div class="playerTwoScoreBox textBox">
+            <h3 class="playerTwoDisplayName">Player 2 Score</h3>
+            <div class="playerTwoScore"></div>
+        </div>
+        <!-- Remaning Tiles block -->
+        <div class="remainingTilesBox textBox">
+            <h3>Remaining Tiles</h3>
+            <div id="demo"></div>
+        </div>
+        <div id="grid"></div>
+        <div>
+            <button class="helpBox" onclick="helpBox()">Help</button>
+            <!-- <div class="helpBox"></div> -->
+        </div>
+        <!-- Display on the bottom of the grid as player 1 tiles or player2 tiles -->
+        <h2 id="playerOneTitle"></h2>
+        <h2 id="playerTwoTitle"></h2>
+        <div class="playerOneTiles">
+            <div class="playerOneTilesRow">
+            </div>
+        </div>
+        <div class="playerTwoTiles">
+            <div class="playerTwoTilesRow">
+            </div>
+        </div>
+        <!-- buttons -->
+        <div id="tiles2">
+        <button class="showTiles" onclick="showTiles()">Tiles</button>
+        <button class="refreshTiles">Refresh</button>
+        <button class="submitWord">Submit</button>
+        <button class="backToRack" onclick="backToRack()">Exit</button>
+        </div>
+        
+    </div>
+    <script src="./script.js"></script>
+    <script src="./apps.js"></script>
+    <script src="./gameover.js"></script>
+
+</body>
+</html>
